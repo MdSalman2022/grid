@@ -14,9 +14,7 @@ h1{
     text-align: center;
 }
 
-.btn2{
-    /* display:none; */
-}
+
 li a.active {
     padding: 10px 14px;
     font-size: 14px;
@@ -31,13 +29,22 @@ li a {
     display: grid;
     text-align: center;
     grid-template-columns: repeat(12,30px);
-    grid-template-rows: 80px 50px 70px;
+    grid-template-rows: 80px 50px auto;
     grid-gap:2px;
     grid-template-areas: 
         "lo lo lo lo lo lo lo lo lo lo lo lo"
         "h h h u u u l l l e e e"
         ". . . . j j j j . . . ."
         ;
+}
+.join{
+    margin-top: 0px;
+    background-color: #ff91ab;
+    border-radius: 10px;
+    border-bottom: none;
+    padding: 15px;
+    color: white;
+    font-weight: bold;
 }
 
 .home{
