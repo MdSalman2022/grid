@@ -5,13 +5,40 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Grid Site</title>
+    <link rel="icon" type="image/x-icon" href="/images/app icon 2.png">
+    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="responsive.css">
 </head>
 <body>
-    <h1>Get your <span>favorite</span> wallpaper</h1>
+    <div class="content">
+    <navbar>
+        <div class="navbar">
+                <ul class="menu">    
+                    <li class="logo"><h2><span>Grid</span>Site</h2></li>  
+                    <li class="join"><a class="btn2" href="">Join</a></li>
+                    <li class="upload" ><a href="">Upload</a></li>
+                    <li class="linc"><a  href="">License</a></li>
+                    <li class="explore"><a  href="">Explore</a></li>
+                    <li class="home"><a class="active home" href="">Home</a></li>              
+                </ul>                
+            </div>
+        </div>
+    </navbar>
 
+    <header>
+        <h1>Get your <span>favorite</span> wallpaper</h1>
+        
+            <div class="search">
+               <input type="text" class="searchTerm" placeholder="Search images, vectors,videos and music">
+               <button type="submit" class="searchButton">
+                 <i class="fa fa-search"></i>
+              </button>
+            </div>
+       
+        <p>Popular Searches: easter, wallpaper, nature, background,flowers,sky. money, cat, forest, love, flower,dog, coronavirus</p>
+    </header>
     <div class="container"> 
         <div class="grid">
             <div class="wide btn"><div class="love" ><i class="fa-regular fa-heart"></i></div><img src="images/img8.jpg" alt=""></div>
@@ -49,7 +76,7 @@
             <div class="wide  btn"><div class="love"><i class="fa-regular fa-heart"></i></div><img src="images/img24.jpg" alt=""></div>
         </div>
     </div>
-
+</div>
     <script src="index.js"></script>
 </body>
 </html>

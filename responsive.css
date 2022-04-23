@@ -4,14 +4,174 @@
 }
 body{
     margin: 5px;
+    /* overflow: hidden; */
 }
+
+
+
 h1{
-    font-size: 30px;
+    font-size: 14px;
     text-align: center;
+}
+
+.btn2{
+    /* display:none; */
+}
+li a.active {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+li a {
+    padding: 10px 14px;
+    font-size: 14px;
+  }
+ .menu{
+      height: 100%;
+      width: 100%;
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(12,30px);
+    grid-template-rows: 80px 50px 70px;
+    grid-gap:2px;
+    grid-template-areas: 
+        "lo lo lo lo lo lo lo lo lo lo lo lo"
+        "h h h u u u l l l e e e"
+        ". . . . j j j j . . . ."
+        ;
+}
+
+.home{
+    grid-area: h;
+}
+
+.explore{
+    grid-area: e;
+}
+
+.upload{
+    grid-area: u;
+}
+
+.linc{
+    grid-area: l;
+}
+
+.logo{
+    grid-area: lo;
+}
+.join{
+    grid-area: j;
+}
+
+
+  h2{
+    font-family: 'IBM Plex Mono', monospace;
+    color: #65adff;
+    font-size: 25px;
+    text-align: center;
+}
+h2 span{
+    color: #ff91ab;
+}
+
+
+h1{
+    font-family: 'IBM Plex Mono', monospace;
+    color: #65adff;
+    font-size: 30px;
+    margin-left: 10px;
+    text-align: center;    
+    text-shadow: 2px 2px rgba(0, 0, 0, 0);
 }
 h1 span{
     color: #ff91ab;
 }
+.content{
+    position: relative;
+    justify-content: center;
+    align-items: center;
+}
+header{
+    margin-bottom: 0px;
+    padding: 0px;
+    padding-bottom: 10px;
+    width: 100%;
+    height: 100%;
+    background-image: none;
+    display: grid;
+grid-template-columns: repeat(12,30px);
+    grid-template-rows: 80px 20px 70px 40px;
+    grid-gap:2px;
+    grid-template-areas: 
+        "h1 h1 h1 h1 h1 h1 h1 h1 h1 h1 h1 h1"
+        ". . . . . . . . . . . ."
+        "s s s s s s s s s s s ."
+        "p p p p p p p p p p p p"
+        ;
+    
+}
+header h1{
+    grid-area: h1;
+}
+header .search{
+    grid-area: s;
+}
+header p{
+    grid-area: p;
+}
+
+header p{
+    position: absolute;
+    color: #333;
+    justify-self: center;
+    bottom: 0px;
+    text-align: center;
+    margin-left: 0px;
+    font-size: 13px
+}
+/* search bar  */
+.search {
+  width: 100%;
+  margin-left: 20px;
+  display: flex;
+  position: relative;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #65adff;
+  padding: 10px;
+  height: 30px;
+  border-radius: 90px;
+  outline: none;
+  color: #ff91ab;
+}
+
+.searchTerm:focus{
+  color: #65adff;
+}
+
+.searchButton {
+    position: absolute;
+    font-size: 15px;
+    top: 5px;
+    right: 5px;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #65adff;
+  background: #65adff;
+  text-align: center;
+  color: #fff;
+  border-radius: 90px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+
+
+
+
 .grid>div{
     transition: transform .5s ease;
     position: relative;    
@@ -22,7 +182,7 @@ h1 span{
     z-index: 11;
     border-radius:2px ;
 }
-i{
+.grid i{
     position: absolute;
     top: 5px;
     right: 5px;

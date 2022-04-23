@@ -1,21 +1,158 @@
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@1,500&display=swap');
-
-
 *{
     padding: 0px;
 }
+
 body{
     margin: 30px;
 }
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #fff;
+  }
+  
+  li a.active {
+    border-bottom: 3px solid #65adff;
+  }
+  li a.active:hover {
+    border-bottom: 0;
+  }
+  
+  li a.active {
+    display: inline-block;
+    color: #65adff;
+    text-align: center;
+    padding: 20px 24px;
+    text-decoration: none;
+  }
+  
+  li a {
+    display: inline-block;
+    color: #1da1f2;
+    text-align: center;
+    padding: 20px 24px;
+    text-decoration: none;
+    font-size: 20px;
+  }
+  
+  li {
+    float: right;
+  }
+  
+  .menu li:hover {
+    border-bottom: 3px solid #1da1f2;
+    background-color: #cbe9fc36;
+  }
+
+  li.logo {
+    float: left;
+    background-color: #cbe9fc00;
+    /* font-size:25px ; */
+  }
+  li.logo:hover {
+    border: none;
+  }
+
+
+
+  h2{
+    font-family: 'IBM Plex Mono', monospace;
+    color: #65adff;
+    font-size: 40px;
+    text-align: center;
+}
+h2 span{
+    color: #ff91ab;
+}
+
+
 h1{
     font-family: 'IBM Plex Mono', monospace;
     color: #65adff;
     font-size: 60px;
-    text-align: center;
+    text-align: center;    
+    text-shadow: 2px 2px #000;
 }
 h1 span{
     color: #ff91ab;
 }
+
+header{  
+    background-size: 100%;
+    width: 78%;
+    height: 100%;
+    position: relative;
+    display: grid;
+    justify-content: center;
+    border-radius: 20px;
+    margin-bottom: 50px;
+    padding: 200px;
+    background-image: url("images/winter2.jpg");
+    background-repeat: no-repeat;
+    object-fit: cover;
+    position: relative;
+    
+}
+
+
+header p{
+    position: absolute;
+    color: #fff;
+    justify-self: center;
+    bottom: 150px;
+}
+/* search bar  */
+.search {
+  width: 100%;
+  position: relative;
+  display: flex;
+}
+
+.searchTerm {
+  width: 100%;
+  border: 3px solid #65adff;
+  padding: 10px;
+  height: 30px;
+  border-radius: 90px;
+  outline: none;
+  color: #ff91ab;
+}
+
+.searchTerm:focus{
+  color: #65adff;
+}
+
+.searchButton {
+    top: 5px;
+    right: 8px;
+    position: absolute;
+  width: 45px;
+  height: 45px;
+  border: 1px solid #65adff;
+  background: #65adff;
+  text-align: center;
+  color: #fff;
+  border-radius: 90px;
+  cursor: pointer;
+  font-size: 20px;
+}
+
+
+.btn2{
+    margin-top: 10px;
+    background-color: #ff91ab;
+    border-radius: 10px;
+    padding: 15px 30px;
+    color: white;
+    font-weight: bold;
+}
+li .btn2 {    
+    border-bottom: #000;
+  }
+
 .grid>div{
     transition: transform .5s ease;
     position: relative;    
@@ -26,7 +163,7 @@ h1 span{
     z-index: 11;
     border-radius:40px ;
 }
-i{
+.grid i{
     position: absolute;
     top: 30px;
     right: 30px;
